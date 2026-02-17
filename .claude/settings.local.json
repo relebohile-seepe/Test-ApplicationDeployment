@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:octopus.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(dotnet build:*)",
+      "Bash(setx:*)",
+      "Bash(dotnet publish:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)"
+    ]
+  }
+}

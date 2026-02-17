@@ -35,6 +35,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.Yellow;
             label1.Location = new System.Drawing.Point(293, 67);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(116, 20);
@@ -43,12 +44,14 @@
             // 
             // button1
             // 
-            button1.Location = new System.Drawing.Point(315, 189);
+            button1.Location = new System.Drawing.Point(293, 174);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(128, 29);
             button1.TabIndex = 1;
-            button1.Text = "New Button";
+            button1.Text = "Update";
             button1.UseVisualStyleBackColor = true;
+            button1.Visible = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -59,6 +62,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Test Application";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
